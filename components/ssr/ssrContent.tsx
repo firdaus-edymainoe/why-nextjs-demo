@@ -14,15 +14,20 @@ const SsrContent = ({ name }: { name?: string }) => {
 		<>
 			<Container sx={{ marginBottom: "20px" }}>
 				{name ? (
-					// <Container sx={{width: '100%', backgroundColor: 'coral'}}>
-					<Typography align="center" variant="h4">
-						Hi {name}!
-					</Typography>
+					<>
+						<Typography align="center" variant="h4">
+							Hi {name}!
+						</Typography>
+						<Typography
+							align="center"
+							sx={{ marginBottom: "10px" }}
+						>
+							You can change your name from the URL!
+						</Typography>
+					</>
 				) : (
-					// </Container>
 					<></>
 				)}
-				<Typography align='center' sx={{marginBottom: '10px'}}>You can change your name from the URL!</Typography>
 				<Typography variant="h5">Server Side Rendering</Typography>
 				<Typography variant="body1">
 					This whole page is server rendered! Nothing was loaded on
