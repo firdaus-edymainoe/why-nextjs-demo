@@ -11,9 +11,8 @@ import {
 	TableRow,
 	TableCell,
 	TableBody,
-	Link as MuiLink,
 } from "@mui/material";
-import Link from "next/Link";
+import Link from "next/link";
 import React from "react";
 
 const Li = styled(ListItem)({
