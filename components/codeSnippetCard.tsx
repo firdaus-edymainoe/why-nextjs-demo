@@ -2,7 +2,12 @@ import { Container, Paper, Toolbar, Typography } from "@mui/material";
 import Image from "next/image";
 import React from "react";
 
-const CodeSnippetCard = ({text, image}) => {
+interface propType {
+	text: string,
+	image: HTMLImageElement
+}
+
+const CodeSnippetCard = ({text, image} : propType) => {
 	return (
 		<>
 			<Container sx={{ display: "flex", justifyContent: "center" }}>
