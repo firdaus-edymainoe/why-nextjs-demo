@@ -88,6 +88,12 @@ const Folders = () => {
 						<Typography variant="body1">
 							{"--------------->"}
 						</Typography>
+						<Typography variant="body1">
+							{"--------------->"}
+						</Typography>
+						<Typography variant="body1">
+							{"--------------->"}
+						</Typography>
 					</Grid>
 					<Grid item xs={6}>
 						<Stack>
@@ -101,7 +107,7 @@ const Folders = () => {
 							<Link href="/ssr">Server Side Rendering</Link>
 							<span style={{ whiteSpace: "nowrap" }}>
 								<Link href="/ssr/name/Harsha">
-									Dynamic Routing Server Side Rendering
+									Dynamic Routing SSR
 								</Link>
 							</span>
 							<Link href="/">Home</Link>
