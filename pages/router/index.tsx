@@ -11,7 +11,7 @@ const Router = () => {
 			<Container>
 				<Paper sx={{ padding: "2ch" }}>
 					<Typography variant="h5" sx={{ marginBottom: "10px" }}>
-						Folder Based Routing
+						Built-in Router
 					</Typography>
 					<Grid container>
 						<Grid item md={4} container={true}>
