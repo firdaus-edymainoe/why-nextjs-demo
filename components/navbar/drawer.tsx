@@ -27,7 +27,6 @@ const LeftDrawer = ({ showDrawer, toggleDrawer }: drawer) => {
 					},
 				}}
 				open={showDrawer}
-				onOpen={toggleDrawer}
 				onClose={toggleDrawer}
 			>
 				<Toolbar />
