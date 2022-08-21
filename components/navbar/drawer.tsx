@@ -16,7 +16,7 @@ const drawerWidth = 240;
 const LeftDrawer = ({ showDrawer, toggleDrawer }: drawer) => {
 	return (
 		<>
-			<SwipeableDrawer
+			<Drawer
 				anchor="left"
 				sx={{
 					width: drawerWidth,
@@ -29,9 +29,6 @@ const LeftDrawer = ({ showDrawer, toggleDrawer }: drawer) => {
 				open={showDrawer}
 				onOpen={toggleDrawer}
 				onClose={toggleDrawer}
-				hysteresis={0.01}
-				minFlingVelocity={250}
-				swipeAreaWidth={80}
 			>
 				<Toolbar />
 				<Box onClick={toggleDrawer} sx={{margin: '0px 2ch'}}>
@@ -43,7 +40,7 @@ const LeftDrawer = ({ showDrawer, toggleDrawer }: drawer) => {
 					<CustomLink href='/isg' label='Incremental Static Regeneration'/>
 					<CustomLink href='/pros-cons' label='Pros & Cons (vs CRA)'/>
 				</Box>
-			</SwipeableDrawer>
+			</Drawer>
 		</>
 	);
 };

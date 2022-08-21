@@ -25,8 +25,8 @@ const Folders = () => {
 		<>
 			<Container>
 				<Typography variant="body1">
-					Image on the left shows the "Pages" folder of this app.
-					NextJS automatically use the folder and file name as the URL
+					The image shows the "Pages" folder of this app. NextJS
+					automatically use the folder and file name as the URL
 					endpoints.
 				</Typography>
 
@@ -56,64 +56,67 @@ const Folders = () => {
 					</List>
 				</Container>
 
-				<Grid container rowSpacing={100}>
-					<Grid item xs={4}>
-						<Typography variant="body1">/csr/index.tsx</Typography>
-						<Typography variant="body1">/isg/index.tsx</Typography>
-						<Typography variant="body1">/pros-cons/index.tsx</Typography>
-						<Typography variant="body1">/router/index.tsx</Typography>
-						<Typography variant="body1">/ssg/index.tsx</Typography>
-						<Typography variant="body1">/ssr/index.tsx</Typography>
-						<Typography variant="body1">
-							/ssr/name/[name].tsx
-						</Typography>
-						<Typography variant="body1">/index.tsx</Typography>
-					</Grid>
-					<Grid item xs={2}>
-						<Typography variant="body1">
-							{"--------------->"}
-						</Typography>
-						<Typography variant="body1">
-							{"--------------->"}
-						</Typography>
-						<Typography variant="body1">
-							{"--------------->"}
-						</Typography>
-						<Typography variant="body1">
-							{"--------------->"}
-						</Typography>
-						<Typography variant="body1">
-							{"--------------->"}
-						</Typography>
-						<Typography variant="body1">
-							{"--------------->"}
-						</Typography>
-						<Typography variant="body1">
-							{"--------------->"}
-						</Typography>
-						<Typography variant="body1">
-							{"--------------->"}
-						</Typography>
-					</Grid>
-					<Grid item xs={6}>
-						<Stack>
-							<Link href="/csr">Client Side Rendering</Link>
-							<Link href="/isg">
-								Incremental Static Generation
-							</Link>
-							<Link href="/pros-cons">Pros & Cons</Link>
-							<Link href="/router">Built-in Router</Link>
-							<Link href="/ssg">Static Site Generation</Link>
-							<Link href="/ssr">Server Side Rendering</Link>
-							<span style={{ whiteSpace: "nowrap" }}>
-								<Link href="/ssr/name/Harsha">
-									Dynamic Routing SSR
+				<Container>
+					<Typography variant="body1">
+						Below are all the directory paths as links to their
+						corresponding pages. By utilizing{" "}
+						<a
+							href="https://nextjs.org/docs/api-reference/next/link"
+							target="_blank"
+							rel="noreferrer"
+						>
+							Next/Link
+						</a>{" "}
+						navigation will occurs as if it is a single page application (SPA) as the  client will
+						prefetch the next pages providing a snappy UX ⚡. 
+					</Typography>
+					<List>
+						<Li>
+							<Typography variant="body1">
+								<Link href="/csr">/csr/index.tsx</Link>
+							</Typography>
+						</Li>
+						<Li>
+							<Typography variant="body1">
+								<Link href="/isg">/isg/index.tsx</Link>
+							</Typography>
+						</Li>
+						<Li>
+							<Typography variant="body1">
+								<Link href="/pros-cons">
+									/pros-cons/index.tsx
 								</Link>
-							</span>
-							<Link href="/">Home</Link>
-						</Stack>
-					</Grid>
-				</Grid>
+							</Typography>
+						</Li>
+						<Li>
+							<Typography variant="body1">
+								<Link href="/router">/router/index.tsx</Link>
+							</Typography>
+						</Li>
+						<Li>
+							<Typography variant="body1">
+								<Link href="/ssg">/ssg/index.tsx</Link>
+							</Typography>
+						</Li>
+						<Li>
+							<Typography variant="body1">
+								<Link href="/ssr">/ssr/index.tsx</Link>
+							</Typography>
+						</Li>
+						<Li>
+							<Typography variant="body1">
+								<Link href="/ssr/name/Harsha">
+									/ssr/name/[name].tsx
+								</Link>
+							</Typography>
+						</Li>
+						<Li>
+							<Typography variant="body1">
+								<Link href="/">/index.tsx</Link>
+							</Typography>
+						</Li>
+					</List>
+				</Container>
 			</Container>
 		</>
 	);
