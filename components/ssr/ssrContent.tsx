@@ -54,7 +54,7 @@ const SsrContent = ({ name }: { name?: string }) => {
 
 					<Toolbar />
 
-					<Paper sx={{ padding: "3ch", width: "90%" }}>
+					<Paper sx={{ padding: "3ch", width: "90%", backkgroundColor: 'oldlace' }}>
 						<Typography variant="body1">
 							The card below represents the classic React{" "}
 							{"<div id='root'>"}
