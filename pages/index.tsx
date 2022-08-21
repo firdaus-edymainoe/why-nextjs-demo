@@ -24,7 +24,7 @@ const Home: NextPage = () => {
 				<Typography variant="h4" component="h1" gutterBottom>
 					Why use NextJS?
 				</Typography>
-				<Typography variant="body1">
+				<Typography variant="body1" align='center'>
 					Click the hamburger button 🍔 at top left and explore the features of
 					NextJS!
 				</Typography>
