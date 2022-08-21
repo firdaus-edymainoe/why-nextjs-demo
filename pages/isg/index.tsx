@@ -33,7 +33,7 @@ const StaticSiteGeneration = (props: {
 						</Typography>
 						<Toolbar />
 						<Typography align="center" variant="body1">
-							This page is regenerated every 30 seconds.
+							This page is regenerated every 30 seconds... ish? 😅
 						</Typography>
 						<Toolbar />
 						<Container>
