@@ -29,11 +29,11 @@ const Home: NextPage = () => {
 					NextJS!
 				</Typography>
 				<Toolbar />
-				<Typography variant="body1">
+				<Typography variant="body1" align='center'>
 					This app is built with NextJS and MUI v5
 				</Typography>
 				{/* <Toolbar /> */}
-				<Typography variant="body1">
+				<Typography variant="body1" align='center'>
 					Check out the source code of this app on{" "}
 					<a
 						href="https://github.com/firdaus-edymainoe/why-nextjs-demo"
