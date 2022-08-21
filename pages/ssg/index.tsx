@@ -12,7 +12,11 @@ import React from "react";
 import CodeSnippetCard from "../../components/codeSnippetCard";
 import ssgCode from "../../public/ssg.svg";
 
-const StaticSiteGeneration = () => {
+interface propsType {
+	builtDate : string,
+}
+
+const StaticSiteGeneration = (props : propsType) => {
 	return (
 		<>
 			<Grid container>
@@ -30,12 +34,7 @@ const StaticSiteGeneration = () => {
 							<Paper sx={{ padding: "4ch" }}>
 								<Typography align="center" variant="body1">
 									This page was built on{" "}
-									{new Date().toLocaleString("en-GB", {
-										dateStyle: "long",
-										timeStyle: "medium",
-										hour12: false,
-										timeZone: "Asia/Singapore",
-									})}{" "}
+									{props.builtDate}
 									{" MYT"}
 								</Typography>
 							</Paper>
@@ -55,3 +54,17 @@ const StaticSiteGeneration = () => {
 };
 
 export default StaticSiteGeneration;
+
+export const getStaticProps = async () => {
+
+	return ({
+		props: {
+			builtDate: new Date().toLocaleString("en-GB", {
+				dateStyle: "long",
+				timeStyle: "medium",
+				hour12: false,
+				timeZone: "Asia/Singapore",
+			})
+		}
+	})
+}

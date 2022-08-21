@@ -14,24 +14,8 @@ import CodeSnippetCard from "../../components/codeSnippetCard";
 import isgCode from "../../public/isg.svg";
 
 const StaticSiteGeneration = (props: {
-	date:
-		| string
-		| number
-		| boolean
-		| React.ReactElement<any, string | React.JSXElementConstructor<any>>
-		| React.ReactFragment
-		| React.ReactPortal
-		| null
-		| undefined;
-	randomNumber:
-		| string
-		| number
-		| boolean
-		| React.ReactElement<any, string | React.JSXElementConstructor<any>>
-		| React.ReactFragment
-		| React.ReactPortal
-		| null
-		| undefined;
+	date: string;
+	randomNumber: number;
 }) => {
 	return (
 		<>
