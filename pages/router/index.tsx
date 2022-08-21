@@ -1,6 +1,6 @@
 import React from "react";
 import Folders from "../../components/router/folders";
-import foldersImage from "../../public/folders.png";
+import foldersImage from "../../public/folders.jpg";
 import { Grid, Paper, Typography } from "@mui/material";
 import Image from "next/image";
 import { Container } from "@mui/system";
