@@ -41,7 +41,7 @@ const LeftDrawer = ({ showDrawer, toggleDrawer }: drawer) => {
 					<CustomLink href='/ssr' label='Server Side Rendering'/>
 					<CustomLink href='/ssg' label='Static Site Generation'/>
 					<CustomLink href='/isg' label='Incremental Static Regeneration'/>
-					<CustomLink href='/ssr' label='Pros & Cons (vs CRA)'/>
+					<CustomLink href='/pros-cons' label='Pros & Cons (vs CRA)'/>
 				</Box>
 			</SwipeableDrawer>
 		</>

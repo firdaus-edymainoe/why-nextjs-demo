@@ -8,15 +8,16 @@ import {
 	Toolbar,
 	Typography,
 } from "@mui/material";
+import Link from "next/link";
 import React from "react";
 import CodeSnippetCard from "../../components/codeSnippetCard";
 import ssgCode from "../../public/ssg.svg";
 
 interface propsType {
-	builtDate : string,
+	builtDate: string;
 }
 
-const StaticSiteGeneration = (props : propsType) => {
+const StaticSiteGeneration = (props: propsType) => {
 	return (
 		<>
 			<Grid container>
@@ -27,14 +28,28 @@ const StaticSiteGeneration = (props : propsType) => {
 						</Typography>
 						<Typography variant="body1">
 							NextJS will automatically generate all static HTML
-							whenever possible upon build time.
+							whenever possible upon build time. This page
+							utililzes the getStaticProps() function to get the
+							built date. The "<Link href="/">Home</Link>" and "
+							<Link href="/pros-cons">Pros & Cons</Link>" pages
+							are 100% static without adding any functions.
+						</Typography>
+						<Typography>
+							Click{" "}
+							<Link
+								href="https://github.com/firdaus-edymainoe/why-nextjs-demo/tree/main/static_files/pages"
+								target="_blank"
+								rel="noreferrer"
+							>
+								here
+							</Link>{" "}
+							to view the all static files for this app.
 						</Typography>
 						<Toolbar />
 						<Container>
 							<Paper sx={{ padding: "4ch" }}>
 								<Typography align="center" variant="body1">
-									This page was built on{" "}
-									{props.builtDate}
+									This page was built on {props.builtDate}
 									{" MYT"}
 								</Typography>
 							</Paper>
@@ -56,15 +71,14 @@ const StaticSiteGeneration = (props : propsType) => {
 export default StaticSiteGeneration;
 
 export const getStaticProps = async () => {
-
-	return ({
+	return {
 		props: {
 			builtDate: new Date().toLocaleString("en-GB", {
 				dateStyle: "long",
 				timeStyle: "medium",
 				hour12: false,
 				timeZone: "Asia/Singapore",
-			})
-		}
-	})
-}
+			}),
+		},
+	};
+};
