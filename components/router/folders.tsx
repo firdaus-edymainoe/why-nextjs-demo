@@ -95,7 +95,7 @@ const Folders = () => {
 							<Link href="/isg">
 								Incremental Static Generation
 							</Link>
-							<Link hfef="/pros-cons">Pros & Cons</Link>
+							<Link href="/pros-cons">Pros & Cons</Link>
 							<Link href="/router">Built-in Router</Link>
 							<Link href="/ssg">Static Site Generation</Link>
 							<Link href="/ssr">Server Side Rendering</Link>
