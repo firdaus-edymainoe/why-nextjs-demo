@@ -33,7 +33,15 @@ const StaticSiteGeneration = (props: {
 						</Typography>
 						<Toolbar />
 						<Typography align="center" variant="body1">
-							This page is regenerated every 30 seconds... ish? 😅
+							This page is regenerated every 30 seconds...{" "}
+							<a
+								href="https://nextjs.org/docs/basic-features/data-fetching/incremental-static-regeneration"
+								target="_blank"
+								rel="noreferrer"
+							>
+								ish?
+							</a>{" "}
+							😅
 						</Typography>
 						<Toolbar />
 						<Container>
