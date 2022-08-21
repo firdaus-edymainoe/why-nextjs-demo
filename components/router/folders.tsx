@@ -60,6 +60,8 @@ const Folders = () => {
 					<Grid item xs={4}>
 						<Typography variant="body1">/csr/index.tsx</Typography>
 						<Typography variant="body1">/isg/index.tsx</Typography>
+						<Typography variant="body1">/pros-cons/index.tsx</Typography>
+						<Typography variant="body1">/router/index.tsx</Typography>
 						<Typography variant="body1">/ssg/index.tsx</Typography>
 						<Typography variant="body1">/ssr/index.tsx</Typography>
 						<Typography variant="body1">
@@ -93,6 +95,8 @@ const Folders = () => {
 							<Link href="/isg">
 								Incremental Static Generation
 							</Link>
+							<Link hfef="/pros-cons">Pros & Cons</Link>
+							<Link href="/router">Built-in Router</Link>
 							<Link href="/ssg">Static Site Generation</Link>
 							<Link href="/ssr">Server Side Rendering</Link>
 							<span style={{ whiteSpace: "nowrap" }}>
