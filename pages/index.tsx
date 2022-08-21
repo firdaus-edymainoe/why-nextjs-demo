@@ -5,7 +5,9 @@ import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import ProTip from "../src/ProTip";
 import Copyright from "../src/Copyright";
-import { Toolbar } from "@mui/material";
+import { Paper, Toolbar } from "@mui/material";
+import Image from "next/image";
+import buildPng from '../public/build-pages.png'
 
 const Home: NextPage = () => {
 	return (
@@ -30,7 +32,7 @@ const Home: NextPage = () => {
 				<Typography variant="body1">
 					This app is built with NextJS and MUI v5
 				</Typography>
-				<Toolbar />
+				{/* <Toolbar /> */}
 				<Typography variant="body1">
 					Check out the source code of this app on{" "}
 					<a
@@ -41,6 +43,13 @@ const Home: NextPage = () => {
 						GitHub
 					</a>
 				</Typography>
+				{/* <Toolbar /> */}
+				<Paper sx={{padding: '2ch',marginTop: '3ch'}}>
+					<Container>
+						<Typography variant="body1" align='center' sx={{marginBottom: '1ch'}}>Below is the build result of this app. You can see all the routes and their page type (SSR, ISG or SSG).</Typography>
+						<Image src={buildPng} />
+					</Container>
+				</Paper>
 			</Box>
 		</Container>
 	);

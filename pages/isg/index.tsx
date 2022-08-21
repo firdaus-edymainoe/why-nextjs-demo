@@ -23,7 +23,7 @@ const StaticSiteGeneration = (props: {
 				<Grid item md={6}>
 					<Container sx={{ marginBottom: "20px" }}>
 						<Typography variant="h5">
-							Incremental Static Generation heello
+							Incremental Static Generation
 						</Typography>
 						<Typography variant="body1">
 							We can also update the static HTML pages by
