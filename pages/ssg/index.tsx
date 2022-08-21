@@ -34,7 +34,7 @@ const StaticSiteGeneration = (props: propsType) => {
 							<Link href="/pros-cons">Pros & Cons</Link>" pages
 							are 100% static without adding any functions.
 						</Typography>
-						<Typography>
+						<Typography sx={{marginTop: '1ch'}}>
 							Click{" "}
 							<Link
 								href="https://github.com/firdaus-edymainoe/why-nextjs-demo/tree/main/static_files/pages"

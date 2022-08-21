@@ -1,6 +1,7 @@
 import * as React from "react";
 import { AppBar, IconButton, Toolbar, Typography } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
+import LunchDiningIcon from '@mui/icons-material/LunchDining';
 import { topbar } from "./types";
 import Link from "next/link";
 
@@ -20,7 +21,7 @@ const Topbar = ({ toggleDrawer }: topbar) => {
 						sx={{ mr: 2 }}
 						onClick={toggleDrawer}
 					>
-						<MenuIcon />
+						<LunchDiningIcon />
 					</IconButton>
 					<Link href="/">
 						<Typography>NextJS Demo</Typography>
