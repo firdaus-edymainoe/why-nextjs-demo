@@ -3,10 +3,14 @@ import React from "react";
 import CodeSnippetCard from "../../../components/codeSnippetCard";
 import ssrCode from "../../../public/ssr.svg";
 import SsrContent from "../../../components/ssr/ssrContent";
+import Head from "../../../node_modules/next/head";
 
 const SsrWithName = (props: { name: string | undefined }) => {
 	return (
 		<>
+			<Head>
+				<title>{props.name} - Why NextJS Demo</title>
+			</Head>
 			<Grid container>
 				<Grid item md={6}>
 					<SsrContent name={props.name} />

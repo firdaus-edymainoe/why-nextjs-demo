@@ -12,6 +12,7 @@ import Link from "next/link";
 import React from "react";
 import CodeSnippetCard from "../../components/codeSnippetCard";
 import ssgCode from "../../public/ssg.svg";
+import Head from "../../node_modules/next/head";
 
 interface propsType {
 	builtDate: string;
@@ -20,6 +21,9 @@ interface propsType {
 const StaticSiteGeneration = (props: propsType) => {
 	return (
 		<>
+			<Head>
+				<title>SSG - Why NextJS Demo</title>
+			</Head>
 			<Grid container>
 				<Grid item md={6}>
 					<Container sx={{ marginBottom: "20px" }}>
@@ -34,7 +38,7 @@ const StaticSiteGeneration = (props: propsType) => {
 							<Link href="/pros-cons">Pros & Cons</Link>" pages
 							are 100% static without adding any functions.
 						</Typography>
-						<Typography sx={{marginTop: '1ch'}}>
+						<Typography sx={{ marginTop: '1ch' }}>
 							Click{" "}
 							<Link
 								href="https://github.com/firdaus-edymainoe/why-nextjs-demo/tree/main/static_files/pages"

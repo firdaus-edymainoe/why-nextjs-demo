@@ -12,13 +12,17 @@ import Image from "next/image";
 import React from "react";
 import CodeSnippetCard from "../../components/codeSnippetCard";
 import isgCode from "../../public/isg.svg";
+import Head from "../../node_modules/next/head";
 
-const StaticSiteGeneration = (props: {
+const IncrementalStaticGeneration = (props: {
 	date: string;
 	randomNumber: number;
 }) => {
 	return (
 		<>
+			<Head>
+				<title>ISG - Why NextJS Demo</title>
+			</Head>
 			<Grid container>
 				<Grid item md={6}>
 					<Container sx={{ marginBottom: "20px" }}>
@@ -68,7 +72,7 @@ const StaticSiteGeneration = (props: {
 	);
 };
 
-export default StaticSiteGeneration;
+export default IncrementalStaticGeneration;
 
 export const getStaticProps = async () => {
 	let randomNumber = Math.floor(Math.random() * 100);

@@ -4,10 +4,14 @@ import foldersImage from "../../public/folders.jpg";
 import { Box, Grid, Paper, Typography } from "@mui/material";
 import Image from "next/image";
 import { Container } from "@mui/system";
+import Head from "../../node_modules/next/head";
 
 const Router = () => {
 	return (
 		<>
+			<Head>
+				<title>Router - Why NextJS Demo</title>
+			</Head>
 			<Container>
 				<Paper sx={{ padding: "2ch" }}>
 					<Typography variant="h5" sx={{ marginBottom: "10px" }}>
@@ -35,8 +39,8 @@ const Router = () => {
 										src={foldersImage}
 										layout="fill"
 										objectFit="contain"
-										// width={384}
-										// height={1115}
+									// width={384}
+									// height={1115}
 									/>
 								</Box>
 								<Typography

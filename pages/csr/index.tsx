@@ -35,12 +35,12 @@ const Csr = () => {
 
 	return (
 		<>
-		<Head>
-			<title>CSR - Why NextJS Demo</title>
-		</Head>
+			<Head>
+				<title>CSR - Why NextJS Demo</title>
+			</Head>
 			<Grid container>
 				<Grid item md={6}>
-					<Container sx={{marginBottom: '20px'}}>
+					<Container sx={{ marginBottom: '20px' }}>
 						{/* HEADER */}
 						<Typography variant="h5">
 							Client Side Rendering
