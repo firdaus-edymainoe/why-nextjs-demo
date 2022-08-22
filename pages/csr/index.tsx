@@ -12,6 +12,7 @@ import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import CodeSnippetCard from "../../components/codeSnippetCard";
 import csrCode from "../../public/csr.svg";
+import Head from "../../node_modules/next/head";
 
 const countdownValue = 5;
 
@@ -34,6 +35,9 @@ const Csr = () => {
 
 	return (
 		<>
+		<Head>
+			<title>CSR - Why NextJS Demo</title>
+		</Head>
 			<Grid container>
 				<Grid item md={6}>
 					<Container sx={{marginBottom: '20px'}}>
