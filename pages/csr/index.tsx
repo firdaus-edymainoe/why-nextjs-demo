@@ -46,7 +46,7 @@ const Csr = () => {
 						<Typography variant="body1">
 							The following content below replicates what would
 							happen in client side rendering albeit a tad
-							exaggerated. This is the default for ReactJS.
+							exaggerated. This is the default for ReactJS. However, with NextJS it will still generate a static HTML for this page and let JS hydrate the page afterwards on the client side.
 						</Typography>
 						<Toolbar />
 
