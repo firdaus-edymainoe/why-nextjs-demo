@@ -38,6 +38,10 @@ const StaticSiteGeneration = (props: propsType) => {
 							<Link href="/pros-cons">Pros & Cons</Link>" pages
 							are 100% static without adding any functions.
 						</Typography>
+						<Typography variant='body1' sx={{ marginTop: '2ch' }} >
+							You can create statuc dynamic routes by implementing getStaticPaths(). Check out the special <Link href='/ssg/Amin'>Boss</Link> and <Link href='/ssg/Harsha'>mini boss
+							</Link> pages.
+						</Typography>
 						<Typography sx={{ marginTop: '1ch' }}>
 							Click{" "}
 							<Link
