@@ -105,7 +105,7 @@ const Folders = () => {
 						</Li>
 						<Li>
 							<Typography variant='body1'>
-								<Link href='/ssg/Harsha/'>/ssg/[bosses]>.tsx (mini 🤣)</Link>
+								<Link href='/ssg/Harsha/'>/ssg/[bosses].tsx (mini 🤣)</Link>
 							</Typography>
 						</Li>
 						<Li>
