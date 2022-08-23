@@ -48,6 +48,6 @@ export const getStaticProps = async (params : { bosses : string }) => {
 		desc = "Harsha me beloved mini boss! 🤪";
 	}
 	return {
-		props: { desc: desc, builtDate: builtDat },
+		props: { desc: desc, builtDate: builtDate },
 	};
 };
