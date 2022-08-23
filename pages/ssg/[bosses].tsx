@@ -1,7 +1,7 @@
 import { Container, Paper, Typography } from "@mui/material";
 import React from "react";
 
-const Bosses = (params: { desc: string }) => {
+const Bosses = (params: { desc: string, builtDate: string }) => {
 	return (
 		<>
 			<Container>
@@ -14,6 +14,7 @@ const Bosses = (params: { desc: string }) => {
 					}}
 				>
 					<Typography align="center">Hi, {params.desc}!</Typography>
+					<Typography variant='outline' sx={{marginTop: '2ch'}}>This page was built on {params.builtDate}</Typography>
 				</Paper>
 			</Container>
 		</>
@@ -34,13 +35,19 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps = async ({ params }) => {
 	let desc = "";
+	let builtDate = new Date().toLocaleString("en-GB", {
+		dateStyle: "long",
+		timeStyle: "medium",
+		hour12: false,
+		timeZone: "Asia/Singapore",
+	})
 
 	if (params.bosses === "Amin") {
-		desc = "Amin me beloved real boss! 🤴";
+		desc = "Amin me beloved real boss! Happy birthday boss!!! 🎉🎉🎉";
 	} else {
 		desc = "Harsha me beloved mini boss! 🤪";
 	}
 	return {
-		props: { desc: desc },
+		props: { desc: desc, builtDate: builtDat },
 	};
 };
