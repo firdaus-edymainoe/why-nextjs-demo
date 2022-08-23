@@ -9,6 +9,7 @@ import {
 } from "@mui/material";
 import React from "react";
 import { cons, pros } from "../../components/pros-cons/constans";
+import Head from "../../node_modules/next/head";
 
 const Li = styled(ListItem)({
 	display: "list-item",
@@ -18,6 +19,9 @@ const Li = styled(ListItem)({
 const ProsCons = () => {
 	return (
 		<>
+			<Head>
+				<title>Pros & Cons - Why NextJS Demo</title>
+			</Head>
 			<Container>
 				<Paper sx={{ padding: "2ch" }}>
 					<Typography variant="h5">Pros & Cons of NextJS</Typography>

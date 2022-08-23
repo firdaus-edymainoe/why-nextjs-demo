@@ -12,6 +12,7 @@ import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import CodeSnippetCard from "../../components/codeSnippetCard";
 import csrCode from "../../public/csr.svg";
+import Head from "../../node_modules/next/head";
 
 const countdownValue = 5;
 
@@ -34,9 +35,12 @@ const Csr = () => {
 
 	return (
 		<>
+			<Head>
+				<title>CSR - Why NextJS Demo</title>
+			</Head>
 			<Grid container>
 				<Grid item md={6}>
-					<Container sx={{marginBottom: '20px'}}>
+					<Container sx={{ marginBottom: '20px' }}>
 						{/* HEADER */}
 						<Typography variant="h5">
 							Client Side Rendering
@@ -46,7 +50,7 @@ const Csr = () => {
 						<Typography variant="body1">
 							The following content below replicates what would
 							happen in client side rendering albeit a tad
-							exaggerated. This is the default for ReactJS.
+							exaggerated. This is the default for ReactJS. However, with NextJS it will still generate a static HTML for this page and let JS hydrate the page afterwards on the client side.
 						</Typography>
 						<Toolbar />
 

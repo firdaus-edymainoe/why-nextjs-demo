@@ -29,13 +29,14 @@ export default function MyApp(props: MyAppProps) {
 	return (
 		<CacheProvider value={emotionCache}>
 			<Head>
+				<title>Why NextJS Demo</title>
 				<meta
 					name="viewport"
 					content="initial-scale=1, width=device-width"
 				/>
 			</Head>
 			<ThemeProvider theme={theme}>
-				{/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
+				{/* CssBaseline kickstart an elegant, consistent, and<title>Instant Waktu Solat</title> simple baseline to build upon. */}
 				<CssBaseline />
 				<Navbar />
 				<Toolbar />
