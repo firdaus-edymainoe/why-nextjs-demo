@@ -34,6 +34,9 @@ export const getStaticPaths = async () => {
 };
 
 export const getStaticProps = async (context : {query : { bosses : string }}) => {
+
+	console.log(context)
+	
 	let desc = "";
 	let builtDate = new Date().toLocaleString("en-GB", {
 		dateStyle: "long",
