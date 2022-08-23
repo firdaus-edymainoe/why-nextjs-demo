@@ -17,7 +17,9 @@ const Bosses = (params: { desc: string, builtDate: string }) => {
 						marginBottom: '2ch',
 					}}
 				>
-					<Typography align="center">Hi, {params.desc}!</Typography>
+					<Typography align="center" variant='h5' dangerouslySetInnerHTML={{
+														__html: params.desc,
+													}}></Typography>
 					<Typography variant='caption' align='center' sx={{ marginTop: '2ch' }}>This page was built on {params.builtDate}</Typography>
 				</Paper>
 			</Container>
@@ -51,9 +53,9 @@ export const getStaticProps = async (context: { params: { bosses: string } }) =>
 	})
 
 	if (context.params.bosses === "Amin") {
-		desc = "Amin me beloved real boss! Happy birthday boss!!! 🎉🎉🎉";
+		desc = "<p>Hi Amin, me beloved real boss!</p><p>Happy birthday boss!!! 🎉🎉🎉</p>";
 	} else {
-		desc = "Harsha me beloved mini boss! 🤪";
+		desc = "Hi Harsha, me beloved mini boss! 🤪";
 	}
 	return {
 		props: { desc: desc, builtDate: builtDate },
