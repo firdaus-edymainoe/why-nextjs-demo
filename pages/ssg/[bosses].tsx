@@ -14,7 +14,7 @@ const Bosses = (params: { desc: string, builtDate: string }) => {
 					}}
 				>
 					<Typography align="center">Hi, {params.desc}!</Typography>
-					<Typography variant='outline' sx={{marginTop: '2ch'}}>This page was built on {params.builtDate}</Typography>
+					<Typography variant='caption' align='center' sx={{marginTop: '2ch'}}>This page was built on {params.builtDate}</Typography>
 				</Paper>
 			</Container>
 		</>

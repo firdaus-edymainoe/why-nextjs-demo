@@ -99,6 +99,16 @@ const Folders = () => {
 							</Typography>
 						</Li>
 						<Li>
+							<Typography variant='body1'>
+								<Link href='/ssg/Amin/'>/ssg/[bosses].tsx</Link>
+							</Typography>
+						</Li>
+						<Li>
+							<Typography variant='body1'>
+								<Link href='/ssg/Harsha/'>/ssg/[bosses]>.tsx (mini 🤣)</Link>
+							</Typography>
+						</Li>
+						<Li>
 							<Typography variant="body1">
 								<Link href="/ssr">/ssr/index.tsx</Link>
 							</Typography>
