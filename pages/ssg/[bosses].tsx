@@ -33,10 +33,10 @@ export const getStaticPaths = async () => {
 	};
 };
 
-export const getStaticProps = async (context : {query : { bosses : string }}) => {
+export const getStaticProps = async (context : {params : { bosses : string }}) => {
 
 	console.log(context)
-	
+
 	let desc = "";
 	let builtDate = new Date().toLocaleString("en-GB", {
 		dateStyle: "long",
@@ -45,7 +45,7 @@ export const getStaticProps = async (context : {query : { bosses : string }}) =>
 		timeZone: "Asia/Singapore",
 	})
 
-	if (context.query.bosses === "Amin") {
+	if (context.params.bosses === "Amin") {
 		desc = "Amin me beloved real boss! Happy birthday boss!!! 🎉🎉🎉";
 	} else {
 		desc = "Harsha me beloved mini boss! 🤪";
