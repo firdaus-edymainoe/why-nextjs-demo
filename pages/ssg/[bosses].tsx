@@ -1,5 +1,7 @@
 import { Container, Paper, Typography } from "@mui/material";
 import React from "react";
+import bossesCode from '../../public/SSG-bosses.svg'
+import CodeSnippetCard from '../../components/codeSnippetCard'
 
 const Bosses = (params: { desc: string, builtDate: string }) => {
 	return (
@@ -14,9 +16,10 @@ const Bosses = (params: { desc: string, builtDate: string }) => {
 					}}
 				>
 					<Typography align="center">Hi, {params.desc}!</Typography>
-					<Typography variant='caption' align='center' sx={{marginTop: '2ch'}}>This page was built on {params.builtDate}</Typography>
+					<Typography variant='caption' align='center' sx={{ marginTop: '2ch' }}>This page was built on {params.builtDate}</Typography>
 				</Paper>
 			</Container>
+			<CodeSnippetCard image={bossesCode} text='Below is the simplified code snippet for this page.' />
 		</>
 	);
 };
@@ -33,7 +36,7 @@ export const getStaticPaths = async () => {
 	};
 };
 
-export const getStaticProps = async (context : {params : { bosses : string }}) => {
+export const getStaticProps = async (context: { params: { bosses: string } }) => {
 
 	console.log(context)
 
