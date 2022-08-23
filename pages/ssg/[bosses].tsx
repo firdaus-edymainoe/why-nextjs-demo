@@ -9,10 +9,12 @@ const Bosses = (params: { desc: string, builtDate: string }) => {
 			<Container>
 				<Paper
 					sx={{
-						height: '85vh',
+						height: '80vh',
+						maxHeight: '500px',
 						display: "flex",
 						flexDirection: "column",
 						justifyContent: "center",
+						marginBottom: '2ch',
 					}}
 				>
 					<Typography align="center">Hi, {params.desc}!</Typography>
