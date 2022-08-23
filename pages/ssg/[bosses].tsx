@@ -33,7 +33,7 @@ export const getStaticPaths = async () => {
 	};
 };
 
-export const getStaticProps = async ({ params }) => {
+export const getStaticProps = async (params : { bosses : string }) => {
 	let desc = "";
 	let builtDate = new Date().toLocaleString("en-GB", {
 		dateStyle: "long",
